@@ -74,7 +74,7 @@ const AboutMe = () => {
     }
 
     return (
-        <section className={`${style.paddingX} h-full w-full flex flex-col py-[3rem] gap-[2rem]`}>
+        <section className={`${style.paddingX} flex flex-col py-[3rem] gap-[2rem] pb-[2rem]`}>
             <div
                 className={`flex flex-col xl:flex-row xl:gap-[5rem] md:gap-[2.5rem] gap-[1rem] md:items-start items-center md:justify-start justify-center`}>
                 <div className={`flex justify-center lg:justify-start w-full xl:w-fit min-w-[350px]`}>

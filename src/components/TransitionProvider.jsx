@@ -8,7 +8,7 @@ const TransitionProvider = ({children}) => {
     const pathname = usePathname()
     return (
         <AnimatePresence mode={"wait"} initial={false}>
-            <div key={pathname} className={`flex flex-col w-screen h-screen`}>
+            <div key={pathname} className={`flex flex-col`}>
                 <motion.div className={`fixed top-0 bottom-0 right-full w-screen h-screen bg-gradient-to-br from-[#C33764] to-[#1D2671] z-30`}
                             initial={{x: '100%', width: '100%'}}
                             animate={{x: '0%', width: '0%'}}

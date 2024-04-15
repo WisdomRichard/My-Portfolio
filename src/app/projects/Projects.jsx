@@ -13,7 +13,7 @@ import ProjectCardRight from "@/components/ProjectCardRight";
 
 const Projects = () => {
     return (
-        <section className={`${style.paddingX} py-[2rem] flex flex-col justify-center items-center w-full`}>
+        <section className={`${style.paddingX} py-[2rem] flex flex-col justify-center items-center`}>
             <h1 className={`font-poppins font-extrabold text-[30px] sm:text-[40px] md:text-[45px] lg:text-[55px] text-transparent bg-clip-text bg-gradient-to-br from-[#1D2671] to-[#C33764]`}>
                 PROJECTS
             </h1>

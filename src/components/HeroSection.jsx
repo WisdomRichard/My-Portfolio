@@ -32,7 +32,7 @@ const quote = {
 
 const HeroSection = () => {
     return (
-        <section className={`w-full h-full flex flex-col justify-between content-between`}>
+        <section className={`flex flex-col justify-between content-between`}>
             <div className={`${styles.paddingX} py-[1rem] grid grid-cols-1 sm:grid-cols-12 gap-[3rem] content-center`}>
                 <div className={`col-span-1 sm:col-span-7 place-self-center text-center sm:text-left`}>
                     <motion.h1

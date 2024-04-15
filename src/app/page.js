@@ -8,15 +8,15 @@ export default function Home() {
 
     return (
         <motion.main
-            className={`flex flex-col w-full h-full content-between justify-between`}
+            className={`flex flex-col content-between justify-between`}
             initial={{x: '+200vh'}}
             animate={{x: '0%'}}
             transition={{delay: 1, duration: 0.5, ease: 'easeIn'}}
         >
-            <div className={`flex flex-col w-full`}>
+            <div className={`flex flex-col`}>
                 <HeroSection/>
             </div>
-            <div className={`w-full`}>
+            <div>
                <Footer/>
             </div>
         </motion.main>
