@@ -48,12 +48,9 @@ const Navbar = () => {
                 </div>
                 <div className={`mobile-menu flex md:hidden`}>
                     {
-                        navbarOpen ? (
-                            <button
-                                onClick={() => setNavbarOpen(false)}
-                                className={`flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white`}>
-                                <XMarkIcon className={`h-5 w-5`}/></button>
-                        ) : (
+                        navbarOpen ?
+                            null
+                            : (
                             <button
                                 onClick={() => setNavbarOpen(true)}
                                 className={`flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white`}>
@@ -64,7 +61,19 @@ const Navbar = () => {
 
 
             </div>
-            {navbarOpen ? <MenuOverlay/> : null}
+            {navbarOpen ?
+                <ul className={`md:hidden fixed top-0 left-0 w-full h-screen items-center justify-center bg-black/90 z-10`}>
+                    <li className={`flex flex-col gap-[3rem] justify-center items-center w-screen h-screen rounded-[15px]`}>
+                        <NavLink href={`/`} title={'Home'}/>
+                        <NavLink href={`/about`} title={'About'}/>
+                        <NavLink href={`/projects`} title={'Projects'}/>
+                        <button
+                            onClick={() => setNavbarOpen(false)}
+                            className={`absolute top-[20px] right-[45px] items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white`}>
+                            <XMarkIcon className={`h-5 w-5`}/></button>
+                    </li>
+                </ul>
+                : null}
         </nav>
     )
 }
