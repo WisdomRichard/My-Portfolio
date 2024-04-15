@@ -30,7 +30,7 @@ const TransitionProvider = ({children}) => {
                 >
                 </motion.div>
                 <div className={`h-full`}>
-                <div className="flex h-24 flex-col bg-black">
+                <div className="flex h-24 flex-col">
                     <Navbar/>
                 </div>
                 <div className={`h-[calc(100vh-6rem)]`}>
