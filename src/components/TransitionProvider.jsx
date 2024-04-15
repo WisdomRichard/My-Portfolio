@@ -8,7 +8,7 @@ const TransitionProvider = ({children}) => {
     const pathname = usePathname()
     return (
         <AnimatePresence mode={"wait"} initial={false}>
-            <div key={pathname} className={`flex flex-col`}>
+            <div key={pathname} className={`flex flex-col h-full`}>
                 <motion.div className={`fixed top-0 bottom-0 right-full w-screen h-screen bg-gradient-to-br from-[#C33764] to-[#1D2671] z-30`}
                             initial={{x: '100%', width: '100%'}}
                             animate={{x: '0%', width: '0%'}}
@@ -29,13 +29,14 @@ const TransitionProvider = ({children}) => {
                             transition={{delay: 0.4, duration: 0.8, ease: 'easeInOut'}}
                 >
                 </motion.div>
-                <div className="flex h-24 flex-col bg-black w-full">
+                <div className={`h-full`}>
+                <div className="flex h-24 flex-col bg-black">
                     <Navbar/>
                 </div>
-                <div className={`w-full h-full`}>
+                <div className={`h-[calc(100vh-6rem)]`}>
                     {children}
                 </div>
-
+                </div>
             </div>
         </AnimatePresence>
     )

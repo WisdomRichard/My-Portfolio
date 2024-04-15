@@ -8,7 +8,7 @@ export default function Home() {
 
     return (
         <motion.main
-            className={`flex flex-col content-between justify-between`}
+            className={`flex flex-col content-between justify-between h-full`}
             initial={{x: '+200vh'}}
             animate={{x: '0%'}}
             transition={{delay: 1, duration: 0.5, ease: 'easeIn'}}

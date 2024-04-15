@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en" className={`w-screen h-screen`}>
-        <body className={``}>
+        <body className={`h-full`}>
         <TransitionProvider>{children}</TransitionProvider>
         </body>
         </html>
