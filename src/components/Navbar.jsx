@@ -1,9 +1,7 @@
 'use client';
 import React, {useState} from 'react'
-import Link from "next/link";
 import NavLink from "@/components/NavLink";
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid";
-import MenuOverlay from "@/components/MenuOverlay";
 import Image from "next/image";
 import Logo from '/public/Dante-Logo4.png'
 import {SocialIcon} from "react-social-icons/component";
