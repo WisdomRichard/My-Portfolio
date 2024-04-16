@@ -19,8 +19,8 @@ const ProjectCardRight = (prop) => {
                     <div className={`flex gap-[1rem]`}>
                         <p className={`content-center`}>Technology Stack:</p>
                         <div className={`flex gap-[0.5rem] mt-[0.5rem]`}>
-                            <Image src={prop.image1} height={40} width={40} alt={`html`}/>
-                            <Image src={prop.image2} height={40} width={40} alt={`tailwind`}/>
+                            <Image src={prop.image1} height={40} width={40} alt={`html`} className={`h-[30px] md:h-[40px] w-[30px] md:w-[40px]`}/>
+                            <Image src={prop.image2} height={40} width={40} alt={`tailwind`} className={`h-[30px] md:h-[40px] w-[30px] md:w-[40px]`}/>
                         </div>
                     </div>
                     <div>
@@ -29,7 +29,7 @@ const ProjectCardRight = (prop) => {
                                 <Link href={prop.github} className={`cursor-pointer hover:text-dimWhite hover:underline hover:underline-offset-2`}>
                                     Code</Link>
                                 <div>
-                                    <Image src={Github} height={37} width={37} alt={`Github`}/>
+                                    <Image src={Github} height={37} width={37} alt={`Github`} className={`h-[28px] md:h-[38px] w-[30px] md:w-[40px]`}/>
                                 </div>
                             </div>
                             <div className={`flex gap-[1rem] items-center`}>
@@ -37,7 +37,7 @@ const ProjectCardRight = (prop) => {
                                     <b>Live Demo</b>
                                 </Link>
                                 <div>
-                                    <Image src={Export} height={37} width={37} alt={`Github`}/>
+                                    <Image src={Export} height={37} width={37} alt={`Github`} className={`h-[30px] md:h-[40px] w-[30px] md:w-[40px]`} />
                                 </div>
                             </div>
                         </div>

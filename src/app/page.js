@@ -16,7 +16,7 @@ export default function Home() {
             <div className={`flex flex-col`}>
                 <HeroSection/>
             </div>
-            <div>
+            <div className={`pb-[2rem]`}>
                <Footer/>
             </div>
         </motion.main>

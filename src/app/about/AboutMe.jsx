@@ -64,7 +64,7 @@ const TAB_DATA = [
 
 ]
 const AboutMe = () => {
-    const [tab, setTab] = useState('skills')
+    const [tab, setTab] = useState('languages')
     const [isPending, startTransition] = useTransition()
 
     const handleTabChange = (id) => {
@@ -74,7 +74,7 @@ const AboutMe = () => {
     }
 
     return (
-        <section className={`${style.paddingX} flex flex-col py-[3rem] gap-[2rem] pb-[2rem]`}>
+        <section className={`${style.paddingX} flex flex-col py-[3rem] gap-[2rem] pb-[4rem]`}>
             <div
                 className={`flex flex-col xl:flex-row xl:gap-[5rem] md:gap-[2.5rem] gap-[1rem] md:items-start items-center md:justify-start justify-center`}>
                 <div className={`flex justify-center lg:justify-start w-full xl:w-fit min-w-[350px]`}>
@@ -101,7 +101,7 @@ const AboutMe = () => {
                 </div>
             </div>
             <div>
-                <div className={`grid grid-cols-3 gap-[1rem] lg:gap-0 lg:flex flex-row mt-[1rem] mb-[2rem] justify-around`}>
+                <div className={`grid grid-cols-2 gap-[1rem] lg:gap-0 lg:flex flex-row mt-[1rem] mb-[2rem] justify-around`}>
                     <TabButton selectTab={() => handleTabChange('languages')} active={tab === 'languages'}>
                         {` `}
                         <b>Languages</b> {` `}
