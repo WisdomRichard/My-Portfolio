@@ -19,6 +19,7 @@
 html {
     height: -webkit-fill-available;
 }
+
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -146,4 +147,44 @@ p, h1, h2, h3, h4, h5, h6 {
 .custom__gradient {
     background: linear-gradient(90deg, #C33764 0%, #1D2671 100%);
     filter: blur(800px);
+}
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.app-container::-webkit-scrollbar {
+    display: none;
+}
+
+.container-flow {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.container-flow::-webkit-scrollbar {
+    display: none;
+}
+
+.alright:not(:last-child) {
+    padding-right: 6rem;
+}
+
+.item-flow {
+    width: 100vw;
+}
+
+@media (min-width: 1024px) {
+    .item-flow {
+        width: 88.5vw;
+    }
 }

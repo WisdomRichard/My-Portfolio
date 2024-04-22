@@ -32,7 +32,7 @@ const quote = {
 
 const HeroSection = () => {
     return (
-        <section className={`flex flex-col justify-between content-between text-white`}>
+        <section className={`flex flex-col justify-between content-between text-white sm:h-[675px]`}>
             <div className={`${styles.paddingX} py-[1rem] grid grid-cols-1 sm:grid-cols-12 gap-[3rem] content-center`}>
                 <div className={`col-span-1 sm:col-span-7 place-self-center text-center sm:text-left`}>
                     <motion.h1
@@ -78,7 +78,7 @@ const HeroSection = () => {
                             <Link href={`mailto:whizzy.ww@gmail.com`}
                                   target={`_blank`}
                             >
-                                Contact
+                                Contact Me
                             </Link>
                         </button>
                         <button type={`button`}

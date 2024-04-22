@@ -2,6 +2,10 @@
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
 import {motion} from "framer-motion";
+import Services from "@/components/Services";
+import MiniProjects from "@/components/MiniProjects";
+import Testimonials from "@/components/Testimonials";
+import CallToAction from "@/components/CallToAction";
 
 
 export default function Home() {
@@ -14,9 +18,15 @@ export default function Home() {
             transition={{delay: 1, duration: 0.5, ease: 'easeIn'}}
         >
             <div className={`flex flex-col`}>
-                <HeroSection/>
+                <div>
+                    <HeroSection/>
+                </div>
+                <Services/>
+                <MiniProjects/>
+                <Testimonials/>
+                <CallToAction/>
             </div>
-            <div>
+            <div className={`flex`}>
                <Footer/>
             </div>
         </motion.main>
