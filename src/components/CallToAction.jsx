@@ -18,7 +18,7 @@ const CallToAction = () => {
                         className={`px-6 py-3 rounded-[10px] bg-white hover:bg-slate-200 shadow-xl hover:shadow-2xl `}>
                     <Link href={`mailto:whizzy.ww@gmail.com`}
                           target={`_blank`}
-                          className={`text-transparent bg-clip-text bg-gradient-to-br from-[#1D2671] to-[#C33764] font-medium`}
+                          className={`text-transparent font-manrope bg-clip-text bg-gradient-to-br from-[#1D2671] to-[#C33764] font-medium`}
                     >
                         Contact Me
                     </Link>
