@@ -10,13 +10,14 @@ import tailwind from '/public/tailwind-bw.svg'
 import css from '/public/css3-bw.svg'
 import ProjectCardLeft from "@/components/ProjectCardLeft";
 import ProjectCardRight from "@/components/ProjectCardRight";
+import Heading from "@/components/Heading";
 
 const Projects = () => {
     return (
         <section className={`${style.paddingX} py-[2rem] flex flex-col justify-center items-center text-white`}>
-            <h1 className={`font-poppins font-extrabold text-[30px] sm:text-[40px] md:text-[45px] lg:text-[55px] text-transparent bg-clip-text bg-gradient-to-br from-[#1D2671] to-[#C33764]`}>
-                PROJECTS
-            </h1>
+            <div className={`flex`}>
+                <Heading heading={`PROJECTS`}/>
+            </div>
             <ProjectCardLeft coverImage={Cover2}
                              heading={`Hoo-Bank: The Future of Banking`}
                              paragraph={`This landing page concept showcases Hoo-Bank, a fictional bank, using React and Tailwind CSS. It emphasizes the transformation of a Figma design into a fully responsive website with a modern UI/UX experience.`}

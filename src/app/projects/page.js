@@ -2,6 +2,7 @@
 import React from 'react'
 import Projects from "@/app/projects/Projects";
 import {motion} from "framer-motion";
+import Footer from "@/components/Footer";
 
 const Page = () => {
     return (
@@ -12,6 +13,7 @@ const Page = () => {
             transition={{delay: 1, duration: 0.5, ease: 'easeIn'}}
         >
             <Projects/>
+            <Footer/>
         </motion.div>
     )
 }
