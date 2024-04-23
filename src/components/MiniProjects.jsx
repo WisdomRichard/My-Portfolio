@@ -31,7 +31,7 @@ const MiniProjects = () => {
     const galleryImages = [gallery1, gallery2, gallery3];
 
     return (
-        <div className={`flex flex-col lg:flex-row ${style.paddingX} justify-center bg-black py-[5rem] gap-[2rem]`}>
+        <div className={`flex flex-col lg:flex-row ${style.paddingX} justify-center bg-black py-[3rem] lg:py-[5rem] gap-[2rem]`}>
             <div className={`flex flex-[1.7] flex-col justify-center content-center lg:min-w-[500px] gap-[1rem] xl:gap-[2rem]`}>
                 <Heading heading={`PORTFOLIO`}/>
                 <p className={`${style.paragraph}`}>Explore a curated selection of my projects that demonstrate the

@@ -19,7 +19,7 @@ const Services = () => {
                 width: '100%',
                 height: '100%',
             }}
-            className={`flex flex-col ${style.paddingX} justify-center py-[5rem] gap-[1rem]`}>
+            className={`flex flex-col ${style.paddingX} justify-center py-[3rem] lg:py-[5rem] gap-[1rem]`}>
             <div className={`flex justify-center`}>
                 <Heading heading={`MY SERVICES`}/>
             </div>

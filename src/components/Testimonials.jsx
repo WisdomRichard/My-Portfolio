@@ -34,7 +34,7 @@ const Testimonials = () => {
                 width: '100%',
                 height: '100%',
             }}
-            className={`flex flex-col ${style.paddingX} py-[5rem]`}>
+            className={`flex flex-col ${style.paddingX} py-[3rem] lg:py-[5rem]`}>
             <div className={`flex justify-center mb-[2rem]`}>
                 <Heading heading={`WHAT MY CLIENTS SAY`}/>
             </div>

@@ -17,7 +17,7 @@ export default function Home() {
             animate={{x: '0%'}}
             transition={{delay: 1, duration: 0.5, ease: 'easeIn'}}
         >
-            <div className={`flex flex-col`}>
+            <div className={`flex flex-col bg-black`}>
                 <div>
                     <HeroSection/>
                 </div>
@@ -27,7 +27,7 @@ export default function Home() {
                 <CallToAction/>
             </div>
             <div className={`flex`}>
-               <Footer/>
+                <Footer/>
             </div>
         </motion.main>
     );
