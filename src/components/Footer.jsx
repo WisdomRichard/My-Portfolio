@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className={`flex w-full border-t-[1px] border-solid border-white font-extralight text-[12px] font-manrope text-white`}>
+        <footer className={`flex w-full border-t-[1px] border-solid border-dimWhite font-extralight text-[12px] font-manrope text-white`}>
             <div className={`px-[2rem] md:px-[8rem] py-6 flex items-center justify-between w-full`}>
                 <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
                 <div>

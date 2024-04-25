@@ -14,7 +14,7 @@ import Heading from "@/components/Heading";
 
 const Projects = () => {
     return (
-        <section className={`${style.paddingX} py-[2rem] flex flex-col justify-center items-center text-white`}>
+        <section className={`${style.paddingX} pt-[2rem] flex flex-col justify-center items-center text-white`}>
             <div className={`flex`}>
                 <Heading heading={`PROJECTS`}/>
             </div>

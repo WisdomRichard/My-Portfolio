@@ -20,6 +20,7 @@ const Navbar = () => {
                                 <NavLink href={`/`} title={'Home'}/>
                                 <NavLink href={`/about`} title={'About'}/>
                                 <NavLink href={`/projects`} title={'Projects'}/>
+                                <NavLink href={`/contactUs`} title={'Contact Us'} classname={`hidden lg:block`}/>
                             </li>
                     </ul>
                 </div>
@@ -65,6 +66,7 @@ const Navbar = () => {
                         <NavLink href={`/`} title={'Home'}/>
                         <NavLink href={`/about`} title={'About'}/>
                         <NavLink href={`/projects`} title={'Projects'}/>
+                        <NavLink href={`/contactUs`} title={'Contact Us'}/>
                         <button
                             onClick={() => setNavbarOpen(false)}
                             className={`absolute top-[20px] right-[45px] items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white`}>

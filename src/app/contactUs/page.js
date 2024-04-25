@@ -1,9 +1,8 @@
 'use client'
 import React from 'react'
-import Projects from "@/app/projects/Projects";
 import {motion} from "framer-motion";
+import ContactUs from "@/app/contactUs/ContactUs";
 import Footer from "@/components/Footer";
-import CallToAction from "@/components/CallToAction";
 
 const Page = () => {
     return (
@@ -13,8 +12,7 @@ const Page = () => {
             animate={{x: '0%'}}
             transition={{delay: 1, duration: 0.5, ease: 'easeIn'}}
         >
-            <Projects/>
-            <CallToAction/>
+            <ContactUs/>
             <Footer/>
         </motion.div>
     )
