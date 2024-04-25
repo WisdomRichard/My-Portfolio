@@ -3,12 +3,10 @@ import bg from "../../public/bg.png";
 import style from "@/app/style";
 import Heading from "@/components/Heading";
 import logo1 from '/public/Untitled design.png'
-import logo2 from '/public/Konami.jpg'
 import logo3 from '/public/B.jpg'
 import logo4 from '/public/Raph.jpg'
-import Image from "next/image";
 import ClientCard from "@/components/ClientCard";
-import {BsArrowLeftCircle, BsArrowLeftShort, BsArrowRightCircle, BsArrowRightShort} from "react-icons/bs";
+import {BsArrowLeftCircle, BsArrowRightCircle, BsArrowRightShort} from "react-icons/bs";
 
 const Testimonials = () => {
     const scrollRef = React.useRef(null)
@@ -17,10 +15,15 @@ const Testimonials = () => {
         const {current} = scrollRef;
 
         if (direction === 'left') {
-            current.scrollLeft -= 120;
-        } else {
-            current.scrollLeft += 120;
-        }
+            current.scrollLeft -= window.innerWidth + 30;
+        } if (direction === 'right') {
+            current.scrollLeft += window.innerWidth + 30;
+        } if (direction === 'lefts') {
+            current.scrollLeft -= window.innerWidth - 160;
+        } if (direction === 'rights') {
+            current.scrollLeft += window.innerWidth - 160;
+        } else {}
+
     }
 
 
@@ -58,7 +61,7 @@ const Testimonials = () => {
                             logo={logo3}
                         />
                     </div>
-                    <div className={`item-flow`}>
+                    <div className={`item-flow`} id={`Raph`}>
                         <ClientCard
                             margin={`pl-[3rem] md:pl-[7rem] lg:pl-[2rem]`}
                             writeup={`Wisdom's Commitment and Diligence have yielded Impressive Results in his Projects. His Lastest Projects have surpassed expectations, demonstrating a clear upward trajectory in his Professional Development.`}
@@ -72,10 +75,10 @@ const Testimonials = () => {
                     className={`hidden lg:flex w-full absolute content-center place-items-center gap-[1rem] bottom-[1%] xl:bottom-[21%] left-[0%]`}>
                     <BsArrowLeftCircle
                         className={`text-dimWhite hover:text-white text-[1.4rem] cursor-pointer bg-black rounded-full`}
-                        onClick={() => scroll(`left`)}/>
+                        onClick={() => scroll(`lefts`)}/>
                     <BsArrowRightCircle
                         className={`text-black hover:text-white text-[2rem] cursor-pointer  bg-gradient-to-br from-[#C33764] to-[#1D2671]  rounded-full`}
-                        onClick={() => scroll(`right`)}/>
+                        onClick={() => scroll(`rights`)}/>
 
                 </div>
             </div>

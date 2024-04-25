@@ -28,7 +28,9 @@ const ContactForm = () => {
                                                                                                  height: 50,
                                                                                                  width: 50
                                                                                              }}
-                                                                                             bgColor={`#222222`}/>
+                                                                                             bgColor={`#18191E`}
+                                                                                             fgColor={`#0072b1`}
+                        />
                         </motion.div>
                         <motion.div whileHover={{y: -3}} whileTap={{scale: 0.9}}><SocialIcon network={`github`}
                                                                                              style={{
@@ -36,7 +38,9 @@ const ContactForm = () => {
                                                                                                  width: 50
                                                                                              }}
                                                                                              href={`https://github.com/WisdomRichard`}
-                                                                                             bgColor={`#222222`}/>
+                                                                                             fgColor={`#ffffff`}
+                                                                                             bgColor={`#18191E`}
+                        />
                         </motion.div>
                         <motion.div whileHover={{y: -3}} whileTap={{scale: 0.9}}><SocialIcon network={`whatsapp`}
                                                                                              style={{
@@ -44,7 +48,9 @@ const ContactForm = () => {
                                                                                                  width: 50
                                                                                              }}
                                                                                              href={`https://wa.me/2348147515300`}
-                                                                                             bgColor={`#222222`}/>
+                                                                                             bgColor={`#18191E`}
+                                                                                             fgColor={`#128c7e`}
+                        />
                         </motion.div>
                     </div>
                 </div>
@@ -55,7 +61,7 @@ const ContactForm = () => {
                           method="POST"
                     >
                         <div className={`flex flex-col gap-[0.5rem]`}>
-                            <label className={`text-white font-manrope text-[14px] font-medium`}
+                            <label className={`text-white font-manrope text-[14px] font-medium ml-2`}
                                    htmlFor={`name`}>
                                 Name
                             </label>
@@ -63,7 +69,7 @@ const ContactForm = () => {
                                    id='name'
                                    name='name'
                                    required
-                                   className={`bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-[14px] rounded-lg p-2.5 w-full`}
+                                   className={`bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-dimWhite text-[14px] rounded-lg p-2.5 w-full`}
                                    placeholder={`John Doe`}
                             />
                             <ValidationError errors={state.errors}
@@ -72,7 +78,7 @@ const ContactForm = () => {
                             />
                         </div>
                         <div className={`flex flex-col gap-[0.5rem]`}>
-                            <label className={`text-white font-manrope text-[14px] font-medium`}
+                            <label className={`text-white font-manrope text-[14px] font-medium ml-2`}
                                    htmlFor={`email`}>
                                 Email
                             </label>
@@ -80,7 +86,7 @@ const ContactForm = () => {
                                    id='email'
                                    name='email'
                                    required
-                                   className={`bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-[14px] rounded-lg p-2.5 w-full`}
+                                   className={`bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-dimWhite text-[14px] rounded-lg p-2.5 w-full`}
                                    placeholder={`abc@gmail.com`}
                             />
                             <ValidationError errors={state.errors}
@@ -89,14 +95,14 @@ const ContactForm = () => {
                             />
                         </div>
                         <div className={`flex flex-col gap-[0.5rem]`}>
-                            <label className={`text-white font-manrope text-[14px] font-medium`}
+                            <label className={`text-white font-manrope text-[14px] font-medium ml-2`}
                                    htmlFor={`message`}>
                                 Message
                             </label>
                             <textarea id='message'
                                       name='message'
                                       required
-                                      className={`bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-[14px] rounded-lg p-2.5 w-full`}
+                                      className={`bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-dimWhite text-[14px] rounded-lg p-2.5 w-full`}
                                       placeholder={`Let's talk about...`}
                             />
                             <ValidationError errors={state.errors}
@@ -105,7 +111,7 @@ const ContactForm = () => {
                             />
                         </div>
                         <button type={`submit`}
-                                className={`px-1 py-1 rounded-[10px] bg-gradient-to-br from-[#C33764] to-[#1D2671] hover:bg-slate-800 text-white mt-1 mb-2 font-medium w-full`}
+                                className={`px-1 py-1 rounded-[10px] bg-gradient-to-br from-[#C33764] to-[#1D2671] hover:bg-slate-800 disabled:opacity-35 text-white mt-1 mb-2 font-medium w-full`}
                                 disabled={state.submitting}
                         >
                             <div
@@ -116,7 +122,7 @@ const ContactForm = () => {
                         </button>
                         {state.succeeded && (
                             <p className={`text-green-600 font-manrope font-medium text-sm absolute -bottom-7 left-2`}>
-                                Email Sent Successfully!
+                                Message Sent Successfully!
                             </p>
                         )}
                     </form>
