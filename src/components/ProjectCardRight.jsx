@@ -26,19 +26,19 @@ const ProjectCardRight = (prop) => {
                     <div>
                         <div className={`flex gap-[1.5rem] mt-[1rem] font-bold`}>
                             <div className={`flex gap-[0.5rem] items-center`}>
-                                <Link href={prop.github} className={`cursor-pointer hover:text-dimWhite hover:underline hover:underline-offset-2`}>
+                                <Link href={prop.github} className={`font-manrope font-bold cursor-pointer hover:text-dimWhite hover:underline hover:underline-offset-2`}>
                                     Code</Link>
-                                <div>
+                                <Link href={prop.github}>
                                     <Image src={Github} height={37} width={37} alt={`Github`} className={`h-[28px] md:h-[38px] w-[30px] md:w-[40px]`}/>
-                                </div>
+                                </Link>
                             </div>
                             <div className={`flex gap-[1rem] items-center`}>
-                                <Link href={prop.demo} className={`cursor-pointer hover:text-dimWhite hover:underline hover:underline-offset-2`}>
+                                <Link href={prop.demo} className={`font-manrope font-bold cursor-pointer hover:text-dimWhite hover:underline hover:underline-offset-2`}>
                                     <b>Live Demo</b>
                                 </Link>
-                                <div>
+                                <Link href={prop.demo}>
                                     <Image src={Export} height={37} width={37} alt={`Github`} className={`h-[30px] md:h-[40px] w-[30px] md:w-[40px]`} />
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </div>

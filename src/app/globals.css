@@ -167,28 +167,8 @@ p, h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
-.container-flow {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
 
-.container-flow::-webkit-scrollbar {
-    display: none;
-}
-
-.alright:not(:last-child) {
-    padding-right: 6rem;
-}
-
-.item-flow {
-    width: 100vw;
-}
-
-@media (min-width: 1024px) {
-    .item-flow {
-        width: 88.5vw;
-    }
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }

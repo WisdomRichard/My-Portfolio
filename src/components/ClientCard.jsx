@@ -11,7 +11,7 @@ const ClientCard = (prop) => {
 
 
     return (
-        <div className={`flex flex-col lg:flex-row justify-center content-center item-flow ${prop.margin}`}>
+        <div className={`flex flex-col lg:flex-row justify-center content-center ${prop.margin}`}>
             <div className={`flex flex-col flex-1 gap-[1.5rem] place-content-center`}>
                 <p className={`${style.paragraph} text-center lg:text-left`}>{prop.writeup}</p>
                 <div className={`flex w-full justify-center lg:justify-start`}>

@@ -13,7 +13,13 @@ import gallery1 from '/public/Prototype1.png'
 import gallery2 from '/public/Prototype2.png'
 import gallery3 from '/public/Prototype5.png'
 import Image from "next/image";
-import {BsArrowLeft, BsArrowLeftShort, BsArrowRightShort} from "react-icons/bs";
+import {
+    BsArrowDownRightSquare,
+    BsArrowLeft,
+    BsArrowLeftShort,
+    BsArrowRightShort, BsFillArrowLeftSquareFill,
+    BsFillArrowRightSquareFill
+} from "react-icons/bs";
 
 const MiniProjects = () => {
     const scrollRef = React.useRef(null)
@@ -32,13 +38,13 @@ const MiniProjects = () => {
 
     return (
         <div
-            className={`flex flex-col lg:flex-row ${style.paddingX} justify-center bg-black py-[3rem] lg:py-[5rem] gap-[2rem]`}>
+            className={`flex flex-col lg:flex-row ${style.paddingX} justify-center bg-black py-[3rem] lg:py-[5rem]`}>
             <div
                 className={`flex flex-[1.7] flex-col justify-center content-center lg:min-w-[500px] gap-[1rem] xl:gap-[2rem]`}>
                 <div className={`flex justify-center lg:justify-start`}>
                     <Heading heading={`PORTFOLIO`}/>
                 </div>
-                <p className={`${style.paragraph} text-center lg:text-start`}>Explore a curated selection of my projects
+                <p className={`${style.paragraph} text-center lg:text-start my-[2rem]`}>Explore a curated selection of my projects
                     that demonstrate the
                     positive impact I can bring to your web projects. These projects showcase my skills in various
                     front-end development areas like
@@ -70,15 +76,25 @@ const MiniProjects = () => {
                     ))}
                 </div>
                 <div
-                    className={`flex w-full absolute content-center justify-between bottom-[8%] xl:bottom-[21%] right-[0%] px-[2rem]`}>
-                    <BsArrowLeftShort
-                        className={`text-dimWhite hover:text-white text-[1.4rem] cursor-pointer bg-black rounded-[5px]`}
+                    className={`hidden lg:flex w-full absolute content-center justify-between bottom-[14%] right-[0%] px-[2rem]`}>
+                    <BsFillArrowLeftSquareFill
+                        className={`border-2 bg-dimWhite hover:bg-white border-dimWhite hover:border-white text-[1.6rem] cursor-pointer rounded-[6px]`}
                         onClick={() => scroll(`left`)}/>
-                    <BsArrowRightShort
-                        className={`text-dimWhite hover:text-white text-[1.4rem] cursor-pointer bg-black rounded-[5px]`}
+                    <BsFillArrowRightSquareFill
+                        className={`border-2 bg-dimWhite hover:bg-white border-dimWhite hover:border-white text-[1.6rem] cursor-pointer rounded-[6px]`}
                         onClick={() => scroll(`right`)}/>
 
                 </div>
+            </div>
+            <div
+                className={`flex w-full lg:hidden content-center justify-between px-[2rem] mt-[0.5rem] mb-[1rem]`}>
+                <BsFillArrowLeftSquareFill
+                    className={`border-2 bg-dimWhite hover:bg-white border-dimWhite hover:border-white text-[1.4rem] cursor-pointer rounded-[6px]`}
+                    onClick={() => scroll(`left`)}/>
+                <BsFillArrowRightSquareFill
+                    className={`border-2 bg-dimWhite hover:bg-white border-dimWhite hover:border-white text-[1.4rem] cursor-pointer rounded-[6px]`}
+                    onClick={() => scroll(`right`)}/>
+
             </div>
             <div className={`flex justify-center lg:hidden`}>
                 <button type={`button`}
